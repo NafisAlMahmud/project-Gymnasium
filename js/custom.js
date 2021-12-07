@@ -6,4 +6,9 @@ $(document).ready(function(){
         dots: true,
         autoplay:true,
     });
+
+    // about video pop up
+    $('.venobox').venobox();
+
+
 });

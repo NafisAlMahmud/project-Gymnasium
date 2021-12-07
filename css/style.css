@@ -12,6 +12,9 @@ common CSS start
     --fover : rgba(0, 0, 0, 0.85);
     --overred : rgb(226, 62, 56, 0.5);
     --overwhite : rgb(226, 62, 56, 0.5);
+    --twitter: #1da1f2;
+    --bg1: #ddd;
+    --bg2: #f1f1f1;
 
 
     
@@ -88,6 +91,9 @@ common CSS end
 /* ==================================
 navbar CSS start
 ====================================*/
+.header h3{
+    color: var(--cl-dark);
+}
 .navbar{
     background-color: rgba(53, 53, 53, 0.25);
     position: fixed; 
@@ -258,6 +264,10 @@ bannerr CSS start
     position: relative;
     padding: 0 20px;
 }
+#banner .banner-item .banner-text p{
+    line-height: 18px;
+
+}
 #banner .bg-1 .banner-text p::before {
 	content: '';
 	width: 64px;
@@ -307,4 +317,170 @@ bannerr CSS start
 }
 /* ==================================
 banner CSS end
+====================================*/
+
+
+
+/* ==================================
+about CSS start
+====================================*/
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#about .about-video .about-overlay{
+    background: var(--over6);
+}
+#about .about-video .about-overlay i{
+    width: 48px;
+    height: 48px;
+    background: var(--brand);
+    color: var(--cl-dark);
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+}
+#about .about-details header img{
+    margin-top: -5px;
+}
+#about .about-details p{
+    color: var(--cl-dark);
+    line-height: 20px;
+    
+
+
+}
+#about .about-details p:first-of-type{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+/* ==================================
+about CSS end
+====================================*/
+
+
+/* ==================================
+gallery CSS start
+====================================*/
+#gallery{
+    padding-bottom: 75px;
+}
+#gallery .gallery-bg{
+    background: url(../images/galleryBG.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+    padding-top: 30px;
+
+}
+#gallery .gallery-bg::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--over8);
+    position: absolute;inset: 0;
+    z-index: -1;
+
+}
+#gallery .gallery-bg .gallery-item{
+    margin-bottom: 30px;
+    
+}
+#gallery .gallery-bg .gallery-item .gallery-overlay{
+    background: var(--overred);
+    border: 5px solid var(--overwhite);
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+  
+
+}
+#gallery .gallery-bg .gallery-item:hover .gallery-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#gallery .gallery-bg .gallery-item .gallery-overlay i{
+    color: #fff;
+    font-size: 30px;
+    
+}
+/* ==================================
+gallery CSS end
+====================================*/
+
+
+/* ==================================
+ our team CSS end
+====================================*/
+#team{
+    padding-bottom: 40px;
+}
+#team .team-membar{
+    padding-top: 65px !important;
+    transition: all linear 0.4s;
+}
+#team .team-membar:hover{
+    transform: translateY(-40px);
+}
+#team .team-membar .team-image .team-overlay{
+    background: var(--overred);
+    border: 5px solid var(--overwhite);
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+  
+}
+#team .team-membar:hover .team-image .team-overlay{
+    visibility: visible;
+    opacity: 1;
+
+}
+#team .team-membar .team-image .team-overlay a{
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+#team .team-membar .team-image .team-overlay a:last-child{
+    margin-bottom: 0;
+}
+#team .team-membar .team-image .team-overlay i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all linear 0.4s;
+   
+}
+#team .team-membar .team-image .team-overlay i:hover{
+    color: var(--twitter);
+
+}
+#team .team-membar .card-body h5{
+    color: var(--cl-dark);
+}
+#team .team-membar:hover .card{
+    border-color: var(--bg1) !important ;
+}
+#team .team-membar .card-body h6{
+    color: #555;
+    margin-top: -5px;
+    margin-bottom: 10px !important; 
+}
+#team .team-membar .card-body .card-text{
+    color: var(--cl-dark);
+    line-height: 18px;
+    padding: 0 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+#team .team-membar:hover .card-body .card-text{
+    visibility: visible;
+    opacity: 1;
+}
+/* ==================================
+ our team CSS end
 ====================================*/
