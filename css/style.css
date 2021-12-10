@@ -516,7 +516,7 @@ gallery CSS end
     color: var(--brand);
     font-size: 14px;
 
-    
+
 }
 #testimonial .slick-dots{
     display: flex;
@@ -550,5 +550,89 @@ gallery CSS end
     outline: 0;
 }
 /* ==================================
-testimonial CSS end
+ testimonial CSS end
 ====================================*/
+
+
+/* ==================================
+membarship CSS start
+====================================*/
+#membership {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+#membership .membership-item{
+    margin-top: 25px;
+}
+#membership .membership-item .membership-header{
+    background: var(--bg1);
+    
+}
+#membership .membership-item .membership-header h4{
+    color: var(--cl-dark);
+    line-height: 54px;
+    transition: all linear 0.4s;
+}
+#membership .membership-item:hover .membership-header h4{
+    background: var(--brand);
+    color: #fff;
+
+}
+#membership .membership-item .membership-price .price-overlay{
+
+    background: var(--over8);
+}
+#membership .membership-item .membarship-features{
+    background: var(--bg2);
+}
+#membership .membership-item .membarship-features ul {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#membership .membership-item .membarship-features ul li{
+    margin-bottom: 30px;
+    color: #555;
+}
+#membership .membership-item .membarship-features ul li:last-child{
+    margin-bottom: 0;
+}
+#membership .membership-item .membership-btn a{
+    background: var(--bg1);
+    line-height: 34px;
+    transition: all linear 0.4s;
+}
+#membership .membership-item:hover .membership-btn a{
+    background: var(--brand);
+    color: #fff;
+}
+
+/* ==================================
+membarship CSS end
+====================================*/
+
+
+/* ==================================
+membarship CSS end
+====================================*/
+#funfact {
+    background: url(../images/counter-bg.jpg)no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 43px;
+}
+#funfact::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--over8);
+    position: absolute;inset: 0;
+    z-index: -1;
+
+}
+
+/* ==================================
+membarship CSS end
+====================================*/
+
+ 
