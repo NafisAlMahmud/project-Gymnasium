@@ -635,4 +635,202 @@ membarship CSS end
 membarship CSS end
 ====================================*/
 
+
+/* ==================================
+routine CSS start
+====================================*/
+#routine .routine-menu{
+    margin-bottom: 30px;
+}
+#routine .routine-menu ul li{
+    width: 20%;
+}
+#routine .nav-tabs{
+    border-bottom: none !important;
+}
+#routine .nav-tabs .nav-link{
+    border-radius: o !important;
+    background: var(--bg2);
+    color: var(--cl-dark);
+    width: 100%;
+    line-height: 50px;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+#routine .nav-tabs .nav-link.active{
+    background: var(--brand);
+    color: #fff;
+}
+#routine .nav-tabs .nav-link:hover{
+    border-color: transparent !important;
+}
+#routine .nav-tabs .nav-link.active{
+    border-color: transparent !important;
+
+}
+#routine .routine-tab ul{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+#routine .routine-tab ul li{
+    background: var(--bg2);
+    width: 20%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    transform: scale(.98);
+     
+}
+
+#routine .routine-tab .tab-content ul li .active{
+    background-color: var(--brand);
+    color: #fff;
+
+}
+/* ==================================
+routine CSS end
+======================================
+
+
+/* ==================================
+brand CSS start
+====================================*/
+#brand{
+    padding-bottom: 80px;
+}
+#brand .slick-track{
+    padding: 10px;
+}
+#brand .brand-item{
+    margin-right: 30px;
+}
+#brand .brand-item img{
+    width: 100%;
+}
+#brand .slick-center{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, rgba(0, 0, 0, 0.6));
+}
+#brand .prev-arrow{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+/* ==================================
+brand CSS end
+====================================*/
+
+
+/* ==================================
+footer CSS start
+====================================*/
+footer{
+    background: url(../images/footerBG.jpg)  no-repeat center  / cover;
+    position: relative;
+    z-index: 1;
+   
+}
+footer .footer-logo a img{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    
+}
+
+footer::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--fover);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+footer .footer-main{
+    position: relative;
+    padding-bottom: 30px;
+}
+footer .footer-main::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+footer .footer-main::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+footer .footer-main .footer-item h5{
+    margin-bottom: 30px !important;
+}
+footer .footer-main .footer-item .opening-hours li:last-child{
+    margin-bottom: 0 !important;
+}
+footer .footer-main .footer-item .opening-hours li{
+    margin-bottom: 10px;
+
+}
+
+footer .footer-main .footer-item .opening-hours li span{
+    display: inline-block;
+    width: 100px;
+}
+footer .footer-main .footer-item .twitter-feed .twit-icon{
+    color: var(--twitter);
+    font-size: 20px;
+
+}
+footer .footer-main .footer-item .twitter-feed li{
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+footer .footer-main .footer-item .flickr li{
+    width: 25%;
+    padding: 5px;
+}
+footer .footer-main .footer-item .flickr li img{
+    width: 100%;
+}
+footer .footer-main .footer-item .footer-contact{
+    margin-bottom: 30px;
+}
+footer .footer-main .footer-item .footer-contact li{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+footer .footer-main .footer-item .footer-contact i{
+    color: var(--brand);
+}
+footer .footer-main .footer-item .btn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 !important; 
+    margin-bottom: 2px;
+}
+footer .footer-main .footer-item .btn:hover{
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+
+}
+footer .footer-copy p{
+    line-height: 50px !important;
+}
+footer .footer-copy .copyright span{
+    color: var(--brand);
+}
+
+/* ==================================
+footer CSS end
+====================================*/
+
  
